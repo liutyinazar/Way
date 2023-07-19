@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+
+@font-face {
+  font-family: 'FontAqua';
+  src: url('./assets//fonts//Helvetica.ttf') format('ttf'),
+
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: 'Libre Baskerville', serif;
+  user-select: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl,
+figure,
+blockquote,
+fieldset,
+legend {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  resize: none;
+  font-family: 'FontAqua';
+}
+
+*:focus {
+  outline: none;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+img {
+  pointer-events: none;
+}

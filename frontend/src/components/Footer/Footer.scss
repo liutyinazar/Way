@@ -1,0 +1,26 @@
+.footer {
+    .footer_wrapper {
+        .footer_menu {
+            display: flex;
+            justify-content: center;
+            gap: 52px;
+            padding: 100px 0 80px 0;
+            color: #8d9499;
+
+            .footer_item {
+                &:hover {
+                    color: #1b1b1b;
+                }
+            }
+        }
+
+        .footer_title {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 80px;
+            font-size: 10px;
+            color: #575757;
+            letter-spacing: 1.4px;
+        }
+    }
+}

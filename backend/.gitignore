@@ -1,4 +1,5 @@
-venv 
+venv
 migrations
 templates
 __pycache__
+media

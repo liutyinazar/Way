@@ -1,0 +1,42 @@
+.shop {
+    .shop_title {
+        p {
+            font-size: 14px;
+            color: #a5a5a5;
+            display: flex;
+            gap: 5px;
+
+            .url_menu {
+                &:hover {
+                    color: #000;
+                }
+            }
+        }
+
+        h1 {
+            font-size: 32px;
+            padding-bottom: 32px;
+        }
+    }
+    .container_menu {
+        .shop_item {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+            font-size: 16px;
+            // cursor: pointer;
+
+            // width: 200px;
+
+            .shop_link {
+                text-align: center;
+
+                .shop_content {
+                    padding: 15px 14px;
+                    color: #60676b;
+                }
+            }
+        }
+    }
+}

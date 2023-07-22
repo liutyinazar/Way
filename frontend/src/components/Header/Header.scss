@@ -1,7 +1,6 @@
 .header {
     padding: 28px 120px 0;
 
-
     &.with-background {
         background-image: url("../../assets/images/background.jpg");
         background-repeat: no-repeat;
@@ -40,6 +39,10 @@
         margin-top: 450px;
     }
 
+    .header_menu_absolute {
+        position: absolute;
+    }
+        
     .header_menu {
         padding-top: 120px;
 
@@ -47,7 +50,6 @@
             padding-bottom: 8px;
             color: #60676b;
             letter-spacing: 1.2px;
-
 
             &:hover {
                 color: #1b1b1b;
@@ -58,8 +60,12 @@
                 font-weight: 700;
             }
 
-            img {
-                padding-right: 8px;
+            .menu_link {
+                display: flex;
+                align-items: center;
+                img {
+                    padding-right: 8px;
+                }
             }
         }
     }

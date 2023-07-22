@@ -1,0 +1,59 @@
+.coloboration {
+    .coloboration_title {
+        p {
+            font-size: 14px;
+            color: #a5a5a5;
+            display: flex;
+            gap: 5px;
+
+            .url_menu {
+                &:hover {
+                    color: #000;
+                }
+            }
+        }
+
+        h1 {
+            font-size: 32px;
+            padding-bottom: 32px;
+        }
+    }
+
+    .coloboration_item {
+        .coloboration_link {
+            display: flex;
+            gap: 32px;
+            padding-bottom: 12px;
+
+            .coloboration_items_text {
+                // display: flex;
+                // flex-direction: column;
+                // gap: 38px;
+
+                h1 {
+                    color: #60676b;
+                    padding-bottom: 12px;
+                }
+
+                p {
+                    color: #60676b;
+                    padding-bottom: 62px;
+                    letter-spacing: 1.2px;
+                }
+
+                .coloboration_button {
+                    padding: 10px 24px;
+                    border: 1px solid black;
+                    transition: background-color 0.2s;
+
+                    &:hover {
+                        background-color: #000;
+                        transition: background-color 0.3s;
+                        color: white;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

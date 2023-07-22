@@ -1,18 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
-
-
-@font-face {
-  font-family: 'FontAqua';
-  src: url('./assets//fonts//Helvetica.ttf') format('ttf'),
-
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-  font-family: 'Libre Baskerville', serif;
+  font-family: "Libre Baskerville", serif;
   user-select: none;
 }
 
@@ -55,7 +47,7 @@ textarea {
   border: none;
   outline: none;
   resize: none;
-  font-family: 'FontAqua';
+  font-family: "Nunito Sans", sans-serif;
 }
 
 *:focus {
@@ -66,6 +58,11 @@ textarea {
   max-width: 1920px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.container_menu {
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 img {

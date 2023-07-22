@@ -40,7 +40,7 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="header_menu">
+        <div className={`header_menu ${currentCategory !== 'home' ? 'header_menu_absolute' : ''}`}>
           <ul className="menu_list">
             <li
               className={`menu_item ${
@@ -125,9 +125,11 @@ const Header = () => {
           </ul>
         </div>
       </div>
-      <div className="header_title">
-        <h1>WAY</h1>
-      </div>
+      {currentCategory === "home" && (
+        <div className="header_title">
+          <h1>WAY</h1>
+        </div>
+      )}
     </header>
   );
 };

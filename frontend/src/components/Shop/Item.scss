@@ -1,0 +1,115 @@
+.item {
+    .item_wrapper {
+        p {
+            font-size: 14px;
+            color: #a5a5a5;
+            display: flex;
+            gap: 5px;
+
+            .url_menu {
+                &:hover {
+                    color: #000;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        h1 {
+            font-size: 32px;
+            padding-bottom: 80px;
+        }
+    }
+
+    .item_content {
+        display: flex;
+        gap: 70px;
+
+        .swiper {
+            width: 400px;
+            height: 300px;
+            margin-left: auto;
+            margin-right: auto;
+
+            .swiper-wrapper {
+                justify-content: space-between;
+            }
+
+            .swiper-slide {
+                background-size: cover;
+                background-position: center;
+            }
+        }
+
+        .item_info {
+            .item_detail {
+                .item_detail_list {
+                    color: #60676B;
+
+                    li {
+                        padding-top: 10px;
+                    }
+                }
+                .item_detail_label {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding-top: 15px;
+                    border-bottom: 1px solid #b6b6b6;
+                    color: #60676b;
+
+                    button {
+                        font-size: 24px;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .item_warning {
+                padding: 15px 0 0 0;
+            }
+
+            .item_title,
+            .item_price {
+                color: #60676b;
+                padding-bottom: 5px;
+            }
+
+            .item_quantity {
+                padding-top: 35px;
+                color: #60676b;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+
+                .item_button {
+                    display: flex;
+                    gap: 10px;
+
+                    button {
+                        border: 1px solid #60676b;
+                        padding: 6px 20px;
+                        cursor: pointer;
+                        transition: background-color 1s;
+                        transition: color 0.7s;
+
+                        &:hover {
+                            background-color: #000;
+                            color: white;
+                            transition: color 0.7s;
+                        }
+                    }
+                }
+
+                p {
+                    padding-bottom: 8px;
+                }
+                input {
+                    border: 1px solid #bdbdbd;
+                    width: 80px;
+                    height: 30px;
+                    padding: 15px 10px;
+                    color: #60676b;
+                }
+            }
+        }
+    }
+}

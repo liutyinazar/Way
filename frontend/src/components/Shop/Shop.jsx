@@ -12,7 +12,9 @@ const Shop = () => {
         const response = await axios.get(
           "http://127.0.0.1:8000/api/v1/jewelry/"
         );
-        setData(response.data); // Ви маєте встановити response.data в стан data
+
+        setData(response.data);
+        console.log(response.data)
       } catch (error) {
         console.log(error);
       }
@@ -38,8 +40,8 @@ const Shop = () => {
         <div className="shop_item">
           {data &&
             data.map((data) => (
-              <Link to={`/shop/item/${data.id}`}>
-                <div key={data.id} className="shop_link">
+              <Link key={data.id} to={{ pathname: `/item/${data.id}`, state: { data } }}>
+                <div className="shop_link">
                   <img
                     src={data.images[0].file}
                     alt="images"

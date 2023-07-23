@@ -12,10 +12,8 @@ const App = () => {
     <Router>
       <Header exact path="/" />
       <Switch>
-        <Switch>
-          <Route path="/shop" component={Shop} />
-          <Route path="/shop/item/:id" component={Item} />
-        </Switch>
+        <Route path="/shop" component={Shop} />
+        <Route path="/item/:id" component={Item} />
         <Route path="/collaboration" component={Coloboration} />
       </Switch>
       <Footer />

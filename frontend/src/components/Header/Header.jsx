@@ -7,18 +7,26 @@ import buy from "../../assets/icons/buy.svg";
 import search from "../../assets/icons/search.svg";
 import menu from "../../assets/icons/menu.svg";
 
-import React, { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, useLocation, useHistory  } from "react-router-dom";
 
 const Header = () => {
   const location = useLocation(); // take URL where we are
   const showBackground = location.pathname === "/";
   const [currentCategory, setCurrentCategory] = useState("home");
+  const history = useHistory();
+
+  useEffect(() => {
+    const category = location.pathname.replace("/", "");
+    setCurrentCategory(category || "home");
+  }, [location]);
 
   // Функція, яка встановлює поточну категорію
   const handleCategoryClick = (category) => {
     setCurrentCategory(category);
-  };
+    const url = category === "home" ? "/" : `/${category}`;
+    history.push(url);
+  };;
 
   return (
     <header className={`header ${showBackground ? "with-background" : ""}`}>

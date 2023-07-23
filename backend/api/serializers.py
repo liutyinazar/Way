@@ -16,6 +16,8 @@ class ImageSerializer(serializers.ModelSerializer):
 
 class JewelrySerializer(serializers.ModelSerializer):
     images = ImageSerializer(many=True)
+    coloboration = ColoborationSerializer()
+
 
     class Meta:
         model = Jewelry
@@ -28,5 +30,6 @@ class JewelrySerializer(serializers.ModelSerializer):
             "type",
             "metal",
             "stone",
+            "coloboration",
             "images",
         ]
